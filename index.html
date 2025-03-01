@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Five</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>   
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+</style>
 </head>
-<body>
-    
+
+<body class="">
+    <nav class="flex justify-between items-center bg-cyan-50 w-11/12 mx-auto p-3 rounded-md shadow-md">
+        <div class="flex  gap-2 items-center">
+          <img src="./assets/logo.png" alt="">
+          <h1 class="text-3xl">Dev <span class="font-bold"> Board</span></h1>
+        </div>
+
+        <div class="flex gap-4 items-center ">
+            <div class="flex gap-1 items-center bg-blue-100 p-1 rounded-md">
+                <img src="./assets/checkbox.png" alt="">
+                <h1 class=" text-2xl font-bold">23</h1>
+            </div>
+        <div> <button onclick="changeBg()"><img class="bg-blue-100 p-1 rounded-2xl" src="./assets/theme-btn.png" alt=""></button>
+        </div>
+    </div>
+    </nav>
+
+    <section class="flex justify-between items-center bg-cyan-50 w-11/12 mx-auto p-2 rounded-md my-8 ">
+        <div>
+
+            <nav class="flex justify-between gap-2">
+            <div class="flex gap-5 items-center bg-cyan-100 px-10 rounded-lg"> 
+            <img src="./assets/checkbox.png" alt="">
+            <h1>Task Assigned <br><span class=" text-2xl font-bold">05</span></h1>
+            </div>
+            <div id="discover" class="flex gap-7 items-center bg-gradient-to-r from-blue-500 to-indigo-300 text-white px-12 py-2 rounded-lg">
+                <img src="./assets/board.png" alt="">
+                <h1 class="text-xl">Discover Something <br>New Today!</h1>
+            </div>
+            <div class="flex gap-5 items-center px-10 bg-cyan-100 rounded-lg">
+                <img src="./assets/calender.png" alt="">
+                <h1  id="tarikh" class="text-xl font-semibold"></h1>
+            </div></nav>
+
+            <section class="flex mt-10 justify-between mx-4">
+                <div class="p-3 bg-white rounded-xl">
+                    <button class="bg-cyan-50 p-2 rounded-xl">ShopEase</button>
+                    <h1 class=" text-xl font-bold">Fix Mobile Button Issue</h1>
+                    <p class="bg-cyan-50 p-2 rounded-xl my-3 text-center font-light">Debug using Chrome DevTools <br>, Check for overlapping ...</p>
+                    <div class="flex items-center justify-between">
+                        <h1>Deadline <br><span class=" text-md font-bold">21 March 2025</span></h1>
+                        <buutton class="btn btn-primary">completed</buutton>
+                    </div>
+                </div>
+                <div class="p-3 bg-white rounded-xl">
+                    <button class="bg-cyan-50 p-2 rounded-xl">CloudSync</button>
+                    <h1 class=" text-xl font-bold">Add Dark Mode</h1>
+                    <p class="bg-cyan-50 p-2 rounded-xl my-3 text-center font-light">Store the user's preference in the<br> localStorage, update CSS...</p>
+                    <div class="flex items-center justify-between">
+                        <h1>Deadline <br><span class=" text-md font-bold">21 March 2025</span></h1>
+                        <buutton class="btn btn-primary">completed</buutton>
+                    </div>
+                </div>
+                <div class="p-3 bg-white rounded-xl">
+                    <button class="bg-cyan-50 p-2 rounded-xl">SwiftPay</button>
+                    <h1 class=" text-xl font-bold">Optimizw Home Page</h1>
+                    <p class="bg-cyan-50 p-2 rounded-xl my-3 text-center font-light">Debug using Chrome DevTools <br>, Check for overlapping ...</p>
+                    <div class="flex items-center justify-between">
+                        <h1>Deadline <br><span class=" text-md font-bold">21 March 2025</span></h1>
+                        <buutton class="btn btn-primary">completed</buutton>
+                    </div>
+                </div>
+        
+            </section>
+
+            <section class="flex mt-10 justify-between mx-4">
+                <div class="p-3 bg-white rounded-xl">
+                    <button class="bg-cyan-50 p-2 rounded-xl">Meta</button>
+                    <h1 class=" text-xl font-bold">Add New Emoji👾</h1>
+                    <p class="bg-cyan-50 p-2 rounded-xl my-3 text-center font-light">Debug using Chrome DevTools <br>, Check for overlapping ...</p>
+                    <div class="flex items-center justify-between">
+                        <h1>Deadline <br><span class=" text-md font-bold">21 March 2025</span></h1>
+                        <buutton class="btn btn-primary">completed</buutton>
+                    </div>
+                </div>
+                <div class="p-3 bg-white rounded-xl">
+                    <button class="bg-cyan-50 p-2 rounded-xl">Google LLC</button>
+                    <h1 class=" text-xl font-bold">Intigrate OpenAI API</h1>
+                    <p class="bg-cyan-50 p-2 rounded-xl my-3 text-center font-light">Store the user's preference in the<br> localStorage, update CSS....</p>
+                    <div class="flex items-center justify-between">
+                        <h1>Deadline <br><span class=" text-md font-bold">21 March 2025</span></h1>
+                        <button class="btn btn-primary">completed</button>
+                    </div>
+                </div>
+                <div class="p-3 bg-white rounded-xl">
+                    <button class="bg-cyan-50 p-2 rounded-xl">Glassdoar</button>
+                    <h1 class=" text-xl font-bold">Improve Job Searching</h1>
+                    <p class="bg-cyan-50 p-2 rounded-xl my-3 text-center font-light">Debug using Chrome DevTools <br>, Check for overlapping ...</p>
+                    <div class="flex items-center justify-between">
+                        <h1>Deadline <br><span class=" text-md font-bold">21 March 2025</span></h1>
+                        <button class="btn btn-primary">completed</button>
+                    </div>
+                </div> 
+                
+            </section>
+
+
+        </div>
+
+      <div class=" bg-white h-screen p-3 text-center rounded-xl shadow-sm">
+          <div class="flex gap-2 mx-12">
+            <img src="./assets/activity.png" alt="">
+            <h1>Activity Log</h1>
+          </div>
+          <button class="btn btn-primary my-3">Clear History</button>
+          <div id="histry" class=" bg-white rounded-xl p-2"> </div>
+      </div>
+        
+    </section>
+
+
+    <script>
+        function changeBg() {
+            const colors = [ "bg-cyan-700", "bg-green-300", "bg-yellow-700","bg-red-300", "bg-cyan-400", "bg-orange-400", "bg-blue-800"]; 
+            let index = Math.floor(Math.random() * colors.length);
+            document.body.className = colors[index];
+
+        }
+    </script>
+     <script>
+       document.getElementById("discover").addEventListener("click",function(event){
+        event.preventDefault();
+        window.location.href="./second_part.html"
+       })
+    </script>
+    <script src="./jsfiles/update_time.js"></script>
 </body>
 </html>
