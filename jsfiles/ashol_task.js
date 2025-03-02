@@ -31,6 +31,9 @@ document.getElementById('butn-1').addEventListener('click',function(event){
     history.appendChild(addP)
  });
 
+
+
+
  document.getElementById('butn-2').addEventListener('click',function(event){
     event.preventDefault();
     alert('Board Updated Successfully.')
@@ -54,7 +57,7 @@ document.getElementById('butn-1').addEventListener('click',function(event){
         hour:'2-digit',minute:'2-digit',second:'2-digit',hour12: true
         });
     
-        const task =document.getElementById('fix_mobile').innerText;
+        const task =document.getElementById('dark_mode').innerText;
         const history =document.getElementById('histry');
         const addP =document.createElement('p');
          addP.classList.add(
@@ -88,7 +91,7 @@ document.getElementById('butn-1').addEventListener('click',function(event){
         hour:'2-digit',minute:'2-digit',second:'2-digit',hour12: true
         });
     
-        const task =document.getElementById('fix_mobile').innerText;
+        const task =document.getElementById('optimize').innerText;
         const history =document.getElementById('histry');
         const addP =document.createElement('p');
          addP.classList.add(
@@ -122,7 +125,7 @@ document.getElementById('butn-1').addEventListener('click',function(event){
         hour:'2-digit',minute:'2-digit',second:'2-digit',hour12: true
         });
     
-        const task =document.getElementById('fix_mobile').innerText;
+        const task =document.getElementById('emoji').innerText;
         const history =document.getElementById('histry');
         const addP =document.createElement('p');
          addP.classList.add(
@@ -156,7 +159,7 @@ document.getElementById('butn-1').addEventListener('click',function(event){
         hour:'2-digit',minute:'2-digit',second:'2-digit',hour12: true
         });
     
-        const task =document.getElementById('fix_mobile').innerText;
+        const task =document.getElementById('openAI').innerText;
         const history =document.getElementById('histry');
         const addP =document.createElement('p');
          addP.classList.add(
@@ -190,7 +193,7 @@ document.getElementById('butn-1').addEventListener('click',function(event){
         hour:'2-digit',minute:'2-digit',second:'2-digit',hour12: true
         });
     
-        const task =document.getElementById('fix_mobile').innerText;
+        const task =document.getElementById('improve').innerText;
         const history =document.getElementById('histry');
         const addP =document.createElement('p');
          addP.classList.add(
