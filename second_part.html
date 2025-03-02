@@ -32,11 +32,41 @@
     </div>
     </nav>
 
-    <h1>Blogs</h1>
+    <h1 class="text-2xl font-bold text-center my-4">Blogs</h1>
 
-    <div>
-        
+    <div class=" bg-blue-50 w-11/12 mx-auto p-3 rounded-md shadow-md mb-4">
+        <p class="text-xl font-bold text-center border-b-4">Question-1: What are the different ways to select an element in the dom?</p>
+        <p><span class="font-bold">Answer :</span> There are 5 different ways of selecting an element. Here are they : <br> Using getElementById.<br>
+            Using getElementsByClassName. <br>
+            Using getElementsByTagName.<br>
+            Using querySelector.<br>
+            Using querySelectorAll.<br> So far , i found the getElementById is the mostly used one. </p>
     </div>
+
+    <div class=" bg-blue-50 w-11/12 mx-auto p-3 rounded-md shadow-md mb-4">
+        <p class="text-xl font-bold text-center border-b-4">Question-2: What is the difference between innerHTML,innerText and textContent?</p>
+        <p><span class="font-bold">Answer :</span> We use innerHTML when we need HTML content.It gets or sets the HTML content inside an element, including tags. <br>
+        We use innerText when we need visible text.It gets or sets the visible text content, as well as CSS styles <br>
+        We use textContent when we need all text, regardless of visibility and it ignores css styles. </p>
+    </div>
+
+    <div class=" bg-blue-50 w-11/12 mx-auto p-3 rounded-md shadow-md mb-4">
+        <p class="text-xl font-bold text-center border-b-4">Question-3: What is event delegation in the dom?</p>
+        <p><span class="font-bold">Answer :</span> Event delegation in the DOM is a JavaScript technique where a single event listener is attached to a parent element instead of individual child elements. It works by taking advantage of event bubbling. If a child element is clicked , the event bubbles up to the parent and then the parent can handle it. </p>
+    </div>
+
+    <div class=" bg-blue-50 w-11/12 mx-auto p-3 rounded-md shadow-md mb-4">
+        <p class="text-xl font-bold text-center border-b-4">Question-4: What is event bubbling in the dom?</p>
+        <p><span class="font-bold">Answer :</span>When an event , like a click starts on the element we interact with and then bubbles up to its parent elements, one by one, until it reaches the top of the page, this process is called  event bubbling in the DOM. It lets us handle events on parent elements without  adding event listeners to each one of them. </p>
+    </div>
+
+    <div class=" bg-blue-50 w-11/12 mx-auto p-3 rounded-md shadow-md mb-4">
+        <p class="text-xl font-bold text-center border-b-4">Question-5:  How do you create, add, and remove elements using JavaScript?</p>
+        <p><span class="font-bold">Answer :</span> In Order to create a new HTML element we can use the document.createElement() method. <br> After creating an element, we can add it using methods like: appendChild(), append() , prepend() ,insertBefore(). <br>To remove an element, we can use:  remove(), removeChild() </p>
+    </div>
+
+    
+
 <script>
        document.getElementById("back").addEventListener("click",function(event){
         event.preventDefault();
