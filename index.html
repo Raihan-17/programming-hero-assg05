@@ -143,7 +143,13 @@
         window.location.href="./second_part.html"
        })
     </script>
-        <script src="./jsfiles/ashol_task.js"></script>
+    <script>
+        document.getElementById("clear").addEventListener("click",function(event){
+        event.preventDefault(); 
+        document.getElementById("histry").innerHTML = "";  
+        });
+    </script>
+    <script src="./jsfiles/ashol_task.js"></script>
     <script src="./jsfiles/update_time.js"></script>
 
 </body>
